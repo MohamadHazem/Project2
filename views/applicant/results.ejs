@@ -1,0 +1,19 @@
+<h3>Search Results</h3>
+
+<div class="row">
+    <% vacancys.forEach(vacancy => {%>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><%- vacancy.jobTitle %></h5>
+                <div>Salary: <%= vacancy.salary  %></div>
+                <div>Description: <%= vacancy.description  %></div>
+                <div>Requirement: <%= vacancy.requirement  %></div>
+
+                <a href="/apply/<%= vacancy._id %>" class="btn btn-primary">Apply</a>
+            </div>
+        </div>
+    </div>
+    <% })%>
+</div>
+</div>

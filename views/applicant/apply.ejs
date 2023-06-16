@@ -1,0 +1,29 @@
+<div class="row mt-4">
+    <h1 class="text-center">Apply</h1>
+    <div class="col-4 mx-auto">
+        <form action="/apply/<%=id%>" method="post" enctype ="multipart/form-data">
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="firstName" name="firstName">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="lastName" name="lastName">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="email" placeholder="email" name="email">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="phone" placeholder="phone" name="phone">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="address" name="address">
+            </div>
+            <div>
+                <label>Resume</label>
+                <input class="form-control" type="file" name="resume" />
+              </div>
+            <div class="d-grid gap-2 col">
+                <button class="btn btn-danger" type="submit">Apply</button>
+            </div>
+        </form>
+    </div>
+</div>

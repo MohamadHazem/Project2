@@ -1,0 +1,22 @@
+<div class="row mt-4">
+    <h1 class="text-center">Edit Vacancy</h1>
+    <div class="col-4 mx-auto">
+        <form action="admin/editVacancy/<%=aidee%>?_method=put" method="post">
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="<%=finding.jobTitle%>" name="jobTitle">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="<%=finding.salary%>" name="salary">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="<%=finding.description%>" name="description">
+            </div>
+            <div class="col mb-3">
+                <input class="form-control" type="text" placeholder="<%=finding.requirement%>" name="requirement">
+            </div>
+                <button class="btn btn-danger" type="submit" >Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+<div>
+    <h3>Vacancies Posted</h3>
+    
+    <div class="row">
+        <% vacancys.forEach(vacancy => {%>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%= vacancy.jobTitle %></h5>
+                    <div>Salary: <%= vacancy.salary  %></div>
+                    <div>Description: <%= vacancy.description  %></div>
+                    <div>Requirement: <%= vacancy.requirement  %></div>
+                    <a href="/admin/editVacancy/<%= vacancy._id  %>" class="btn btn-primary">Edit Vacancy</a>
+                    <a href="/admin/deleteVacancy/<%= vacancy._id  %>" class="btn btn-primary">Delete Vacancy</a>
+                </div>
+            </div>
+        </div>
+        <% })%>
+    </div>
+</div>
+<br>
+<a href="/admin/applicants" class="btn btn-primary">View Applicants</a>
+<a href="/admin/createVacancy" class="btn btn-danger">Create Vacancy</a>

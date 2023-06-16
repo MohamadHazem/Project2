@@ -1,0 +1,25 @@
+<h3>Applicant List</h3>
+    
+<div><% vacancys.forEach(vacancy => {%>
+    <h5><%= vacancy.jobTitle %></h5>
+    <div class="row">
+        <% vacancy.applicants.forEach(app => {%>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= app.firstName %></h5>
+                        <div>Last Name: <%= app.lastName  %></div>
+                        <div>Email: <%= app.email  %></div>
+                        <div>Phone: <%= app.phone  %></div>
+                        <div>Address: <%= app.address  %></div>
+                        <div>Resume: <%= app.resume  %></div>
+                    </div>
+                </div>
+            </div>
+        <% })%>
+    </div> 
+          
+
+        
+    <% })%>
+</div>       
